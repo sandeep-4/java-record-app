@@ -65,6 +65,8 @@ public class ApplicationSecurityConfig extends WebSecurityConfigurerAdapter  {
             .permitAll()
             .antMatchers("/vechile","/vechile/**","/vechilemodel")
             .permitAll()
+            .antMatchers("/profile")
+            .permitAll()
             .anyRequest().authenticated()
             .and()
             .formLogin()

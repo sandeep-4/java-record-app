@@ -33,4 +33,8 @@ public class EmployeeService {
 		 empRepo.deleteById(id);
 	}
 	
+	public Employee findByUsername(String username) {
+		return empRepo.findByUsername(username);
+	}
+	
 }
